@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import { Input } from "@/app/forward-ref-example";
 import { useDocumentWidth } from "@/app/useDocumentWidth";
 import { useSmartFetch } from "@/app/useSmartFetch";
+import { ComponentWithCtx } from "@/app/contextExample";
 
 export default function Home() {
   useDocumentWidth();
@@ -19,6 +20,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Input />
+      <ComponentWithCtx />
     </main>
   );
 }
